@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-23T16:26:06.293Z</updated>
+  <updated>2019-06-24T14:17:53.984Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My Gallery</title>
-    <link href="http://yoursite.com/2019/06/23/My-Gallery/"/>
-    <id>http://yoursite.com/2019/06/23/My-Gallery/</id>
-    <published>2019-06-23T13:32:00.000Z</published>
-    <updated>2019-06-23T16:26:06.293Z</updated>
+    <title>20190624</title>
+    <link href="http://yoursite.com/2019/06/24/20190624/"/>
+    <id>http://yoursite.com/2019/06/24/20190624/</id>
+    <published>2019-06-24T14:16:48.000Z</published>
+    <updated>2019-06-24T14:17:53.984Z</updated>
     
-    <content type="html"><![CDATA[<p>  测试！</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="什么是Unity？"><a href="#什么是Unity？" class="headerlink" title="什么是Unity？"></a>什么是Unity？</h3><hr><p>&emsp;&emsp;Unity就是一款游戏引擎。王者荣耀、炉石传说、刺激战场、仙剑奇侠传都是以Unity作为引擎进行开发的。</p><p>&emsp;&emsp;Unity除了游戏开发，还可以进行工艺仿真、手机APP、增强现实、虚拟现实、动漫、电影等。</p><p>&emsp;&emsp;Unity的比较火的原因是Unity具有的跨平台特性（全平台特性）、组件化设计以及Unity的入门较为简单（初学者两个月左右，即可完成独立游戏开发）。</p><p>&nbsp;<br>&nbsp;</p><h3 id="Unity的职能分工和职业规划"><a href="#Unity的职能分工和职业规划" class="headerlink" title="Unity的职能分工和职业规划"></a>Unity的职能分工和职业规划</h3><hr><h5 id="emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-技术总监"><a href="#emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-技术总监" class="headerlink" title="&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;技术总监"></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;技术总监</h5><table><thead><tr><th align="center">主策划</th><th align="center">主程序</th><th align="center">主美术</th></tr></thead><tbody><tr><td align="center">系统策划</td><td align="center">服务端</td><td align="center">原画组</td></tr><tr><td align="center">数值策划</td><td align="center">客户端</td><td align="center">3D建筑</td></tr><tr><td align="center">关卡策划</td><td align="center">工具开发</td><td align="center">3D角色</td></tr><tr><td align="center">剧情策划</td><td align="center">运营数据系统</td><td align="center">骨骼动画</td></tr><tr><td align="center">任务策划</td><td align="center"></td><td align="center">粒子特效</td></tr><tr><td align="center"></td><td align="center"></td><td align="center">地形编辑</td></tr><tr><td align="center"></td><td align="center"></td><td align="center">UI界面</td></tr></tbody></table><p>Unity开发是作为一个客户端的职位。服务端负责把游戏的数据存储在服务器，客户端从服务端拿到数据，最后显示在前端。</p><p>工具开发是为了给客户端制作一些开发工具。帮助开发人员进行快速开发。</p><p>运营数据系统主要是给服务端使用。在游戏上线后，系统数据会有变更，所以就需要运营数据系统进行快速的数据修改。</p><p>Unity客户端开发在向上发展后就是主程序开发人员，很多部分都需要主程序开发人员的介入。最后就是我们的开发总监，需要对三个部门进行协调处理。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;  测试！&lt;/p&gt;
-
+        &lt;h3 id=&quot;什么是Unity？&quot;&gt;&lt;a href=&quot;#什么是Unity？&quot; class=&quot;headerlink&quot; title=&quot;什么是Unity？&quot;&gt;&lt;/a&gt;什么是Unity？&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;Unity就是一款游戏引擎。王者荣耀、炉石传说、刺
       
     
     </summary>
     
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
     
   </entry>
   
@@ -43,7 +47,7 @@
     <link href="http://yoursite.com/2019/06/23/hello-world/"/>
     <id>http://yoursite.com/2019/06/23/hello-world/</id>
     <published>2019-06-23T09:17:19.001Z</published>
-    <updated>2019-06-23T14:32:44.399Z</updated>
+    <updated>2019-06-24T11:30:25.695Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><a id="more"></a><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -57,12 +61,10 @@
     
     </summary>
     
-      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+      <category term="Hexo文档" scheme="http://yoursite.com/categories/Hexo%E6%96%87%E6%A1%A3/"/>
     
     
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
