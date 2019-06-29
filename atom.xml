@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-24T14:36:04.698Z</updated>
+  <updated>2019-06-29T14:11:35.950Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>初识Unity（一）</title>
+    <link href="http://yoursite.com/2019/06/29/20190629/"/>
+    <id>http://yoursite.com/2019/06/29/20190629/</id>
+    <published>2019-06-29T14:08:27.000Z</published>
+    <updated>2019-06-29T14:11:35.950Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Unity父子物体关系"><a href="#Unity父子物体关系" class="headerlink" title="Unity父子物体关系"></a>Unity父子物体关系</h3><hr><p>&emsp;&emsp;一个游戏对象只能有一个父物体，可以有无数个子物体。子物体的位置、旋转和缩放都是相对于父物体的。</p><p>&emsp;&emsp;当对一个子物体进行位移、旋转、缩放的时候，不会对父物体产生影响。而在对一个父物体进行位移、旋转、缩放的时候，会对所有子物体产生影响。<br>&nbsp;</p><p>&nbsp;</p><a id="more"></a><h3 id="Unity的基础组件"><a href="#Unity的基础组件" class="headerlink" title="Unity的基础组件"></a>Unity的基础组件</h3><hr><p>&emsp;&emsp;组件就是一个具有一定功能的集合。如果希望某一个游戏对象具有某些功能，那么只需要给这个游戏对象添加对应的组件即可。</p><h5 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h5><p>Mash Filter：网格过滤器。这个组件决定了一个游戏对象的形状。<br>Mash  Renderer：网格渲染器。决定了一个游戏对象的外观展示。<br>&nbsp;</p><p>&nbsp;</p><h3 id="Unity的预设体"><a href="#Unity的预设体" class="headerlink" title="Unity的预设体"></a>Unity的预设体</h3><hr><p>&emsp;&emsp;我们可以将某个游戏对象以文件的形式存储起来，这就是预设体。预设体用来批量管理游戏对象。</p><p>&emsp;&emsp;修改预设体的缩放，会对所有的预设体的游戏对象都产生影响，如果对一个预设体的游戏对象修改了它的缩放预设值，那么预设体的修改将对该物体无效。如果给一个预设体添加了组件，那么所有的预设体的游戏对象都会被添加这个组件。</p><p>Select：快速找到游戏对象对应的预设体文件。</p><p>Revert：将游戏对象的组件以及属性还原为预设体中的定义。</p><p>Apply：将游戏对象的组件以及属性应用给预设体。<br>&nbsp;</p><p>&nbsp;</p><h3 id="Unity导入资源包"><a href="#Unity导入资源包" class="headerlink" title="Unity导入资源包"></a>Unity导入资源包</h3><hr><p>&emsp;&emsp;新建一个项目后，可以将需要的素材直接拷贝过去。但是，这样是比较麻烦的，所以我们需要另一种更简单的方式。</p><p>&emsp;&emsp;我们可以把项目中用到的资源打包导出。资源包有两个操作：导入和导出。</p><h5 id="导入资源包："><a href="#导入资源包：" class="headerlink" title="导入资源包："></a>导入资源包：</h5><p>导入资源包有三种方式：</p><p>&emsp;&emsp;第一种，我们可以直接拖拽资源包到Unity中，然后弹出对话框选择需要导入的资源文件，选定后，单击Export即可。</p><p>&emsp;&emsp;第二种，在Project面板右键，找到Improt Package。在Improt Package当中，除了Custom Package（导入自定义资源包）以外，在下面还列出了许多系统给我们提供的标准资源包。</p><p>&emsp;&emsp;第三种，直接双击unitypackage文件即可。</p><h5 id="导出资源包："><a href="#导出资源包：" class="headerlink" title="导出资源包："></a>导出资源包：</h5><ol><li>在Project面板右键</li><li>单击Exporting package</li><li>选中需要打包的内容</li><li>选完后，单击Export</li><li>选择存放资源包的位置。Unity的资源包格式：unitypackage<br>&nbsp;</li></ol><p>&nbsp;</p><h3 id="标准资源包（Standard-Assets）"><a href="#标准资源包（Standard-Assets）" class="headerlink" title="标准资源包（Standard Assets）"></a>标准资源包（Standard Assets）</h3><hr><p>&emsp;&emsp;在之前的导入资源包中，我们已经说了标准资源包导入的位置，那么有可能你的Unity并没有显示出来，那么我们可以通过下面这条路径去找到这些标准资源包。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Windows路径：Unity的安装路径\Editor\Standard Assets</span><br><span class="line">Mac路径：Applications\Unity\Standard Assets</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;如果你还是没有找到的话，那么你可以去找别人拷贝一份。</p><p>&emsp;&emsp;在5.x版本的Unity当中，标准资源包被移出了默认安装当中。需要在UnityStory商店中自行下载（免费）。或者可以在百度中自行搜索资源下载。<br>&nbsp;</p><p>&nbsp;</p><h3 id="Unity地形（Terrain）基础设置"><a href="#Unity地形（Terrain）基础设置" class="headerlink" title="Unity地形（Terrain）基础设置"></a>Unity地形（Terrain）基础设置</h3><hr><ul><li><p>上升地形（Raise or Lower Terrain）：按住shift可以将地形刷低。</p></li><li><p>Bursh：笔刷样式</p></li><li><p>Brush size：笔刷大小</p></li><li><p>Opcity：笔刷硬度</p></li><li><p>恒高地形（Set Height）：设置一个高度，然后将这个高于这个高度的部分刷低，将低于这个高度的部分刷高。</p></li><li><p>Flatten：将设定的高度应用给整个地形。</p></li><li><p>平滑地形（Smooth Height）：平滑可以使一些棱角分明的地方变得圆润平滑。<br>&nbsp;</p></li></ul><p>&nbsp;</p><h3 id="Unity刚体组件（Rigidbody）"><a href="#Unity刚体组件（Rigidbody）" class="headerlink" title="Unity刚体组件（Rigidbody）"></a>Unity刚体组件（Rigidbody）</h3><hr><p>刚体组件（Rigidbody）提供了模拟现实的物理效果。</p><ul><li><p>Mess：质量。</p></li><li><p>Drag：拉力。运动方向上的一个阻力。</p></li><li><p>Angular Drag：旋转的拉力。一个物体在受到一个力的时候，有可能会旋转。</p></li><li><p>User Gravity：使用重力。</p></li><li><p>Is Kinematic：开启运动学。</p></li><li><p>Interpolate：差值。内差值和外插值</p></li><li><p>Collision Detection：碰撞检测机制。</p></li><li><p>Constraints：Freeze Position：约束。</p></li><li><p>Freeze Position：冻结位置。</p></li><li><p>Freeze Rotation：冻结旋转。<br>&nbsp;</p></li></ul><p>&nbsp;</p><h3 id="Unity碰撞体组件（Collider）"><a href="#Unity碰撞体组件（Collider）" class="headerlink" title="Unity碰撞体组件（Collider）"></a>Unity碰撞体组件（Collider）</h3><hr><p>&emsp;&emsp;有很多的Collider，区别就在于碰撞体的形状。<br>&nbsp;</p><p>&nbsp;</p><h3 id="Unity物理材质（Physic-Material）"><a href="#Unity物理材质（Physic-Material）" class="headerlink" title="Unity物理材质（Physic Material）"></a>Unity物理材质（Physic Material）</h3><hr><ul><li>Dynamic Friction：动态摩擦力。有相对有位移的时候的摩擦力</li></ul><ul><li><p>Static Friction：静态摩擦力。</p></li><li><p>Bounciness：弹力。</p></li><li><p>Friction Combine：组合摩擦力。Average：取平均值。</p></li></ul><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Minimum：取最小值。</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Multiply：取乘积。</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Maximum：取最大值。</p><ul><li>Bounce Combine：弹力。 &emsp;  Average：取平均值。</li></ul><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Minimum：取最小值.</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Multiply：取乘积。</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Maximum：取最大值。</p><p>&emsp;&emsp;如果没有设置物理材质，那么摩擦力默认为无穷大，弹力为零。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Unity父子物体关系&quot;&gt;&lt;a href=&quot;#Unity父子物体关系&quot; class=&quot;headerlink&quot; title=&quot;Unity父子物体关系&quot;&gt;&lt;/a&gt;Unity父子物体关系&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;一个游戏对象只能有一个父物体，可以有无数个子物体。子物体的位置、旋转和缩放都是相对于父物体的。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;当对一个子物体进行位移、旋转、缩放的时候，不会对父物体产生影响。而在对一个父物体进行位移、旋转、缩放的时候，会对所有子物体产生影响。&lt;br&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Unity" scheme="http://yoursite.com/categories/Unity/"/>
+    
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
+    
+  </entry>
   
   <entry>
     <title>什么是Unity？</title>
